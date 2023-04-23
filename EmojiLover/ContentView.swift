@@ -23,8 +23,10 @@ struct ContentView: View {
                 ForEach(Emoji.allCases, id: \.self) {
                     emoji in Text(emoji.rawValue)
                 }
-            }.pickerStyle(.segmented)
+            }
+            .pickerStyle(.segmented)
         }
+        .padding()
     }
 }
 
